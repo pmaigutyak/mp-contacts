@@ -1,0 +1,3 @@
+Зв.Дзвінок #{{ return_call.id }}{% if return_call.comment %}*{% endif %}
+{{ return_call.mobile }}
+{% if return_call.is_time_fixed %}{{ return_call.answer_start_time }}-{{ return_call.answer_end_time }}{% endif %}

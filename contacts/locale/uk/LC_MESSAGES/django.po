@@ -1,0 +1,154 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-02-01 19:01+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: __init__.py:8
+msgid "Contacts"
+msgstr "Контакти"
+
+#: lib.py:17
+#, fuzzy, python-format
+msgid "New feedback message #%s"
+msgstr "Нове повідомлення про зворотній звʼязок #"
+
+#: lib.py:35
+#, python-format
+msgid "New return call request #%s"
+msgstr "Новий запит на зворотній дзвінок #%s"
+
+#: models.py:12 models.py:49
+msgid "User"
+msgstr "Користувач"
+
+#: models.py:14 templates/contacts/email/new_feedback_notification.html:10
+msgid "Name"
+msgstr "Імʼя"
+
+#: models.py:16 templates/contacts/email/new_feedback_notification.html:7
+msgid "Subject"
+msgstr "Тема"
+
+#: models.py:19 models.py:61
+#: templates/contacts/email/new_feedback_notification.html:16
+#: templates/contacts/email/new_return_call_notification.html:7
+msgid "Mobile"
+msgstr "Телефон"
+
+#: models.py:22 templates/contacts/email/new_feedback_notification.html:13
+msgid "Email"
+msgstr ""
+
+#: models.py:25 models.py:64
+msgid "Date created"
+msgstr "Дата створення"
+
+#: models.py:27 templates/contacts/email/new_feedback_notification.html:19
+msgid "Message text"
+msgstr "Текст повідомлення"
+
+#: models.py:33
+msgid "Feedback message"
+msgstr "Повідомлення зворотнього звʼязку"
+
+#: models.py:34
+msgid "Feedback messages"
+msgstr "Повідомлення зворотнього звʼязку"
+
+#: models.py:43
+msgid "As fast as possible"
+msgstr "Якнайшвидше"
+
+#: models.py:44
+msgid "In fixed time"
+msgstr "В зазначений час"
+
+#: models.py:52 templates/contacts/email/new_return_call_notification.html:10
+msgid "Answer time"
+msgstr "Час відповіді"
+
+#: models.py:56 templates/contacts/email/new_return_call_notification.html:14
+msgid "Start time"
+msgstr "Від"
+
+#: models.py:59 templates/contacts/email/new_return_call_notification.html:17
+msgid "End time"
+msgstr "До"
+
+#: models.py:66 templates/contacts/email/new_return_call_notification.html:22
+msgid "Comment"
+msgstr "Коментар"
+
+#: models.py:97
+msgid "Return call"
+msgstr "Зворотній дзвінок"
+
+#: models.py:98
+msgid "Return calls"
+msgstr "Зворотні дзвінки"
+
+#: templates/contacts/email/new_feedback_notification.html:5
+msgid "New feedback message #"
+msgstr "Нове повідомлення про зворотній звʼязок #"
+
+#: templates/contacts/email/new_feedback_notification.html:22
+#: templates/contacts/email/new_return_call_notification.html:26
+msgid "Show on site"
+msgstr "Показати на сайті"
+
+#: templates/contacts/email/new_return_call_notification.html:5
+msgid "New return call request #"
+msgstr "Новий запит на зворотній дзвінок #"
+
+#: templates/contacts/index.html:17
+msgid "Зворотній звʼязок"
+msgstr ""
+
+#: templates/contacts/index.html:78
+msgid "Надіслати повідомлення"
+msgstr ""
+
+#: templates/contacts/index.html:90
+msgid "Зворотній дзвінок"
+msgstr ""
+
+#: templates/contacts/index.html:91
+msgid ""
+"Залиште нам свій номер телефону, і ми Вам зателефонуємо у зручний для Вас час"
+msgstr ""
+
+#: templates/contacts/index.html:141
+msgid "Замовити дзвінок"
+msgstr ""
+
+#: views.py:46
+msgid "Message was successfully sent"
+msgstr "Повідомлення було успішно надіслане"
+
+#: views.py:54
+msgid "Please fix the errors in the feedback form"
+msgstr "Будь-ласка виправте помилки у формі зворотнього звʼязку"
+
+#: views.py:67
+msgid "Call request was successfully sent"
+msgstr "Запит на зворотній дзвінок був успішно надісланий"
+
+#: views.py:75
+msgid "Please fix the errors in the return call form"
+msgstr "Будь-ласка виправте помилки у формі зворотнього дзвінка"

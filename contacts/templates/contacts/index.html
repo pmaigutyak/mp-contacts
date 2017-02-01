@@ -1,0 +1,189 @@
+
+{% extends 'base.html' %}
+
+{% load i18n widget_tweaks %}
+
+
+{% block content %}
+
+    <div class="container">
+
+        <form class="row" method="post">
+
+            {% csrf_token %}
+
+            {% block feedback_form_title %}
+                <div class="col-xs-12">
+                    <h2>{% trans 'Зворотній звʼязок' %}</h2>
+                </div>
+            {% endblock %}
+
+            {% block feedback_form_fields %}
+                <div class="form-group col-md-6 col-sm-12 col-xs-12 {% if feedback_form.text.errors %}has-error{% endif %}">
+                    {{ feedback_form.text.label_tag }}
+                    {{ feedback_form.text|add_class:'form-control'|attr:"rows:18" }}
+                    {% if feedback_form.text.errors %}
+                        <span class="help-block">{{ feedback_form.text.errors }}</span>
+                    {% endif %}
+                </div>
+
+                <div class="form-group col-md-6 col-sm-12 col-xs-12 xs-margin {% if feedback_form.subject.errors %}has-error{% endif %}">
+                    {{ feedback_form.subject.label_tag }}
+                    {{ feedback_form.subject|add_class:"form-control input-lg" }}
+                    {% if feedback_form.subject.errors %}
+                        <span class="help-block">{{ feedback_form.subject.errors }}</span>
+                    {% endif %}
+                </div>
+
+                <div class="form-group col-md-6 col-sm-12 col-xs-12 xs-margin {% if feedback_form.name.errors %}has-error{% endif %}">
+                    {{ feedback_form.name.label_tag }}
+                    {{ feedback_form.name|add_class:"form-control input-lg" }}
+                    {% if feedback_form.name.errors %}
+                        <span class="help-block">{{ feedback_form.name.errors }}</span>
+                    {% endif %}
+                </div>
+
+                <div class="form-group col-md-6 col-sm-12 col-xs-12 xs-margin {% if feedback_form.email.errors %}has-error{% endif %}">
+                    {{ feedback_form.email.label_tag }}
+                    {{ feedback_form.email|add_class:"form-control input-lg" }}
+                    {% if feedback_form.email.errors %}
+                        <span class="help-block">{{ feedback_form.email.errors }}</span>
+                    {% endif %}
+                </div>
+
+                <div class="form-group col-md-6 col-sm-12 col-xs-12 {% if feedback_form.mobile.errors %}has-error{% endif %}">
+                    {{ feedback_form.mobile.label_tag }}
+                    {{ feedback_form.mobile|add_class:"form-control input-lg" }}
+                    {% if feedback_form.mobile.errors %}
+                        <span class="help-block">{{ feedback_form.mobile.errors }}</span>
+                    {% endif %}
+                </div>
+            {% endblock %}
+
+            {% block feedback_form_captcha %}
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        {{ feedback_form.captcha }}
+                        {% if feedback_form.captcha.errors %}
+                            <p class="text-danger">{{ feedback_form.captcha.errors.as_text }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endblock %}
+
+            {% block feedback_form_submit_btn %}
+                <div class="col-xs-12">
+                    <button class="btn btn-lg btn-success" name="feedback" value="1" type="submit">
+                        <i class="fa fa-envelope"></i>
+                        {% trans 'Надіслати повідомлення' %}
+                    </button>
+                </div>
+            {% endblock %}
+        </form>
+
+        <form class="row" method="post">
+
+            {% csrf_token %}
+
+            {% block return_call_form_title %}
+                <div class="col-xs-12">
+                    <h2>{% trans 'Зворотній дзвінок' %}</h2>
+                    <p>{% trans 'Залиште нам свій номер телефону, і ми Вам зателефонуємо у зручний для Вас час' %}</p>
+                </div>
+            {% endblock %}
+
+            {% block return_call_form_fields %}
+                <div class="form-group col-md-6 col-sm-12 col-xs-12 {% if return_call_form.comment.errors %}has-error{% endif %}">
+                    {{ return_call_form.comment.label_tag }}
+                    {{ return_call_form.comment|add_class:'form-control'|attr:"rows:10" }}
+                    {% if return_call_form.comment.errors %}
+                        <span class="help-block">{{ return_call_form.comment.errors }}</span>
+                    {% endif %}
+                </div>
+
+                <div class="form-group col-md-6 col-sm-12 col-xs-12 xs-margin {% if return_call_form.mobile.errors %}has-error{% endif %}">
+                    {{ return_call_form.mobile.label_tag }}
+                    {{ return_call_form.mobile|add_class:"form-control input-lg" }}
+                    {% if return_call_form.mobile.errors %}
+                        <span class="help-block">{{ return_call_form.mobile.errors }}</span>
+                    {% endif %}
+                </div>
+
+                <div class="form-group col-md-6 col-sm-12 col-xs-12 xs-margin {% if return_call_form.answer_time.errors %}has-error{% endif %}">
+                    {{ return_call_form.answer_time.label_tag }}
+                    {{ return_call_form.answer_time }}
+                    {% if return_call_form.answer_time.errors %}
+                        <span class="help-block">{{ return_call_form.answer_time.errors }}</span>
+                    {% endif %}
+                </div>
+
+                <div class="form-group col-md-3 col-sm-12 col-xs-12 xs-margin time-field {% if return_call_form.answer_start_time.errors %}has-error{% endif %}">
+                    {{ return_call_form.answer_start_time.label_tag }}
+                    {{ return_call_form.answer_start_time|add_class:"form-control input-lg" }}
+                    {% if return_call_form.answer_start_time.errors %}
+                        <span class="help-block">{{ return_call_form.answer_start_time.errors }}</span>
+                    {% endif %}
+                </div>
+
+                <div class="form-group col-md-3 col-sm-12 col-xs-12 time-field {% if return_call_form.answer_end_time.errors %}has-error{% endif %}">
+                    {{ return_call_form.answer_end_time.label_tag }}
+                    {{ return_call_form.answer_end_time|add_class:"form-control input-lg" }}
+                    {% if return_call_form.answer_end_time.errors %}
+                        <span class="help-block">{{ return_call_form.answer_end_time.errors }}</span>
+                    {% endif %}
+                </div>
+            {% endblock %}
+
+            {% block return_call_form_submit_btn %}
+                <div class="col-xs-12">
+                    <button class="btn btn-lg btn-success" name="call" value="1" type="submit">
+                        <i class="fa fa-phone"></i>
+                        {% trans 'Замовити дзвінок' %}
+                    </button>
+                </div>
+            {% endblock %}
+        </form>
+    </div>
+{% endblock %}
+
+
+{% block css %}
+    {{ block.super }}
+
+    <link rel="stylesheet" href="{{ STATIC_URL }}contacts/jquery-timepicker/jquery.timepicker.css">
+{% endblock %}
+
+
+{% block js %}
+    {{ block.super }}
+
+    <script src="{{ STATIC_URL }}contacts/jquery-timepicker/jquery.timepicker.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var $startTime = $('#{{ return_call_form.answer_start_time.auto_id }}'),
+                $endTime = $('#{{ return_call_form.answer_end_time.auto_id }}'),
+                $timeField = $('#{{ return_call_form.answer_time.auto_id }}'),
+                $timeFieldWrappers = $('.time-field'),
+                pickerParams = {
+                    minTime: '08:00',
+                    maxTime: '21:00',
+                    timeFormat: 'H:i',
+                    show2400: true
+                };
+
+            $startTime.timepicker(pickerParams);
+            $endTime.timepicker(pickerParams);
+
+            $timeField.change(function () {
+                if ($('input[name={{ return_call_form.answer_time.name }}]:checked').val() == 2) {
+                    $timeFieldWrappers.show();
+                } else {
+                    $timeFieldWrappers.hide();
+                }
+            });
+
+            $timeField.trigger('change');
+        });
+    </script>
+{% endblock %}

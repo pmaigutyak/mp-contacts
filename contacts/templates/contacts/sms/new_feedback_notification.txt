@@ -1,0 +1,2 @@
+Нове повідомлення #{{ feedback.id }}
+Тел.: {{ feedback.mobile }}
