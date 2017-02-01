@@ -14,5 +14,9 @@ setup(
     author_email='pmaigutyak@gmail.com',
     url='https://github.com/pmaigutyak/mp-contacts',
     packages=['contacts'],
-    license='MIT'
+    license='MIT',
+    install_requires=[
+        'django-widget-tweaks==1.4.1',
+        'django-recaptcha==1.2.1'
+    ]
 )
