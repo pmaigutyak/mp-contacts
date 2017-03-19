@@ -1,19 +1,19 @@
 
-try:
-    from setuptools import setup
-except ImportError:
-    from distutils.core import setup
+from setuptools import setup, find_packages
+
+from contacts import __version__
 
 
 setup(
-    name='mp-contacts',
-    version='1.0.0',
+    name='django-mp-contacts',
+    version=__version__,
     description='Django contacts app',
     long_description=open('README.md').read(),
     author='Paul Maigutyak',
     author_email='pmaigutyak@gmail.com',
     url='https://github.com/pmaigutyak/mp-contacts',
-    packages=['contacts'],
+    download_url='https://github.com/pmaigutyak/mp-contacts/archive/%s.tar.gz' % __version__,
+    packages=find_packages(),
     license='MIT',
     install_requires=[
         'django-widget-tweaks==1.4.1',

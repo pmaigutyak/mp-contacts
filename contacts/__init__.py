@@ -9,3 +9,5 @@ class ContactsAppConfig(AppConfig):
 
 
 default_app_config = 'contacts.ContactsAppConfig'
+
+__version__ = '1.0'
