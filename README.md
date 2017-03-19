@@ -7,7 +7,7 @@ Django contacts app.
 Install with pip:
 
 ```sh
-$ pip install -e git://github.com/pmaigutyak/mp-contacts.git#egg=mp-contacts
+$ pip install django-mp-contacts
 ```
 
 Add contacts to urls.py:
