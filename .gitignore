@@ -14,3 +14,5 @@ storage.db
 media
 static-collect
 debug.log
+dist
+django_mp_contacts.egg-info

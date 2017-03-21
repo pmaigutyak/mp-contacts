@@ -1,2 +1,7 @@
-include README.md LICENSE requirements.txt
+include README.md
+include LICENSE
+include requirements.txt
+recursive-include contacts/locale *
+recursive-include contacts/static *
+recursive-include contacts/templates *
 prune *.pyc
