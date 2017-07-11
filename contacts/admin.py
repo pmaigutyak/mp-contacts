@@ -1,7 +1,7 @@
 
 from django.contrib import admin
 
-from contacts.models import Feedback, ReturnCall
+from contacts.models import Feedback, ReturnCall, ErrorMessage
 
 
 class FeedbackAdmin(admin.ModelAdmin):
@@ -20,6 +20,11 @@ class ReturnCallAdmin(admin.ModelAdmin):
     search_fields = ('mobile', )
 
 
-admin.site.register(ReturnCall, ReturnCallAdmin)
+class ErrorMessageAdmin(admin.ModelAdmin):
+    list_display = ('id', 'user', 'name', 'mobile', 'email', 'date_created', )
+    search_fields = ('name', 'mobile', 'email', 'text', )
 
+
+admin.site.register(ReturnCall, ReturnCallAdmin)
+admin.site.register(ErrorMessage, ErrorMessageAdmin)
 admin.site.register(Feedback, FeedbackAdmin)

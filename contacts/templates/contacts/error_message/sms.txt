@@ -1,0 +1,2 @@
+Помилка на сайті #{{ error_message.id }}
+Тел.: {{ error_message.mobile }}

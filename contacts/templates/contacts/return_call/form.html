@@ -1,0 +1,52 @@
+
+{% load i18n widget_tweaks %}
+
+
+<form class="row" method="post">
+
+    {% csrf_token %}
+
+    <div class="col-xs-12">
+        <p>{% trans 'Залиште нам свій номер телефону, і ми Вам зателефонуємо у зручний для Вас час' %}</p>
+    </div>
+
+    <div class="form-group col-md-6 col-sm-12 col-xs-12 {% if form.comment.errors %}has-error{% endif %}">
+        {{ form.comment.label_tag }}
+        {{ form.comment|add_class:'form-control'|attr:"rows:10" }}
+        {% if form.comment.errors %}
+            <span class="help-block">{{ form.comment.errors }}</span>
+        {% endif %}
+    </div>
+
+    <div class="form-group col-md-6 col-sm-12 col-xs-12 xs-margin {% if form.mobile.errors %}has-error{% endif %}">
+        {{ form.mobile.label_tag }}
+        {{ form.mobile|add_class:"form-control input-lg" }}
+        {% if form.mobile.errors %}
+            <span class="help-block">{{ form.mobile.errors }}</span>
+        {% endif %}
+    </div>
+
+    <div class="form-group col-md-6 col-sm-12 col-xs-12 xs-margin {% if form.answer_time.errors %}has-error{% endif %}">
+        {{ form.answer_time.label_tag }}
+        {{ form.answer_time }}
+        {% if form.answer_time.errors %}
+            <span class="help-block">{{ form.answer_time.errors }}</span>
+        {% endif %}
+    </div>
+
+    <div class="form-group col-md-3 col-sm-12 col-xs-12 xs-margin time-field {% if form.answer_start_time.errors %}has-error{% endif %}">
+        {{ form.answer_start_time.label_tag }}
+        {{ form.answer_start_time|add_class:"form-control input-lg" }}
+        {% if form.answer_start_time.errors %}
+            <span class="help-block">{{ form.answer_start_time.errors }}</span>
+        {% endif %}
+    </div>
+
+    <div class="form-group col-md-3 col-sm-12 col-xs-12 time-field {% if form.answer_end_time.errors %}has-error{% endif %}">
+        {{ form.answer_end_time.label_tag }}
+        {{ form.answer_end_time|add_class:"form-control input-lg" }}
+        {% if form.answer_end_time.errors %}
+            <span class="help-block">{{ form.answer_end_time.errors }}</span>
+        {% endif %}
+    </div>
+</form>

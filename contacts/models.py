@@ -5,15 +5,13 @@ from django.conf import settings
 from django.db import models
 
 
-class Feedback(models.Model):
+class AbstractMessage(models.Model):
 
     user = models.ForeignKey(
-        settings.AUTH_USER_MODEL, related_name='feedbacks',
-        verbose_name=_('User'), blank=True, null=True)
+        settings.AUTH_USER_MODEL, verbose_name=_('User'), blank=True,
+        null=True)
 
     name = models.CharField(_("Name"), max_length=255)
-
-    subject = models.CharField(_("Subject"), max_length=255)
 
     mobile = models.CharField(
         _("Mobile"), max_length=255, blank=True, null=True)
@@ -30,8 +28,21 @@ class Feedback(models.Model):
         return self.name
 
     class Meta:
+        abstract = True
+
+
+class Feedback(AbstractMessage):
+
+    subject = models.CharField(_("Subject"), max_length=255)
+
+    class Meta:
         verbose_name = _('Feedback message')
         verbose_name_plural = _('Feedback messages')
+
+
+class ErrorMessage(AbstractMessage):
+
+    url = models.URLField(_('URL'), max_length=255)
 
 
 class ReturnCall(models.Model):

@@ -3,7 +3,7 @@ from django import forms
 
 from captcha.fields import ReCaptchaField
 
-from contacts.models import Feedback, ReturnCall
+from contacts.models import Feedback, ReturnCall, ErrorMessage
 
 
 class FeedbackForm(forms.ModelForm):
@@ -26,3 +26,12 @@ class ReturnCallForm(forms.ModelForm):
         widgets = {
             'answer_time': forms.RadioSelect
         }
+
+
+class ErrorMessageForm(forms.ModelForm):
+
+    captcha = ReCaptchaField()
+
+    class Meta:
+        model = ErrorMessage
+        fields = ('text', 'name', 'email', 'mobile', )

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-01 19:01+0200\n"
+"POT-Creation-Date: 2017-07-11 15:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,136 +19,174 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: __init__.py:8
+#: contacts/__init__.py:8
 msgid "Contacts"
 msgstr "Контакти"
 
-#: lib.py:17
-#, fuzzy, python-format
+#: contacts/lib.py:17
 msgid "New feedback message #%s"
 msgstr "Нове повідомлення про зворотній звʼязок #"
 
-#: lib.py:35
+#: contacts/lib.py:35
+msgid "New error message #%s"
+msgstr "Нове повідомлення про помилку #"
+
+#: contacts/lib.py:53
 #, python-format
 msgid "New return call request #%s"
 msgstr "Новий запит на зворотній дзвінок #%s"
 
-#: models.py:12 models.py:49
+#: contacts/models.py:11 contacts/models.py:60
 msgid "User"
 msgstr "Користувач"
 
-#: models.py:14 templates/contacts/email/new_feedback_notification.html:10
+#: contacts/models.py:14 contacts/templates/contacts/error_message/email.html:7
+#: contacts/templates/contacts/feedback/email.html:10
 msgid "Name"
 msgstr "Імʼя"
 
-#: models.py:16 templates/contacts/email/new_feedback_notification.html:7
-msgid "Subject"
-msgstr "Тема"
-
-#: models.py:19 models.py:61
-#: templates/contacts/email/new_feedback_notification.html:16
-#: templates/contacts/email/new_return_call_notification.html:7
+#: contacts/models.py:17 contacts/models.py:72
+#: contacts/templates/contacts/error_message/email.html:13
+#: contacts/templates/contacts/feedback/email.html:16
+#: contacts/templates/contacts/return_call/email.html:7
 msgid "Mobile"
 msgstr "Телефон"
 
-#: models.py:22 templates/contacts/email/new_feedback_notification.html:13
+#: contacts/models.py:20
+#: contacts/templates/contacts/error_message/email.html:10
+#: contacts/templates/contacts/feedback/email.html:13
 msgid "Email"
 msgstr ""
 
-#: models.py:25 models.py:64
+#: contacts/models.py:23 contacts/models.py:75
 msgid "Date created"
 msgstr "Дата створення"
 
-#: models.py:27 templates/contacts/email/new_feedback_notification.html:19
+#: contacts/models.py:25
+#: contacts/templates/contacts/error_message/email.html:16
+#: contacts/templates/contacts/feedback/email.html:19
 msgid "Message text"
 msgstr "Текст повідомлення"
 
-#: models.py:33
+#: contacts/models.py:36 contacts/templates/contacts/feedback/email.html:7
+msgid "Subject"
+msgstr "Тема"
+
+#: contacts/models.py:39
 msgid "Feedback message"
 msgstr "Повідомлення зворотнього звʼязку"
 
-#: models.py:34
+#: contacts/models.py:40
 msgid "Feedback messages"
 msgstr "Повідомлення зворотнього звʼязку"
 
-#: models.py:43
+#: contacts/models.py:45
+msgid "URL"
+msgstr ""
+
+#: contacts/models.py:54
 msgid "As fast as possible"
 msgstr "Якнайшвидше"
 
-#: models.py:44
+#: contacts/models.py:55
 msgid "In fixed time"
 msgstr "В зазначений час"
 
-#: models.py:52 templates/contacts/email/new_return_call_notification.html:10
+#: contacts/models.py:63 contacts/templates/contacts/return_call/email.html:10
 msgid "Answer time"
 msgstr "Час відповіді"
 
-#: models.py:56 templates/contacts/email/new_return_call_notification.html:14
+#: contacts/models.py:67 contacts/templates/contacts/return_call/email.html:14
 msgid "Start time"
 msgstr "Від"
 
-#: models.py:59 templates/contacts/email/new_return_call_notification.html:17
+#: contacts/models.py:70 contacts/templates/contacts/return_call/email.html:17
 msgid "End time"
 msgstr "До"
 
-#: models.py:66 templates/contacts/email/new_return_call_notification.html:22
+#: contacts/models.py:77 contacts/templates/contacts/return_call/email.html:22
 msgid "Comment"
 msgstr "Коментар"
 
-#: models.py:97
+#: contacts/models.py:108
 msgid "Return call"
 msgstr "Зворотній дзвінок"
 
-#: models.py:98
+#: contacts/models.py:109
 msgid "Return calls"
 msgstr "Зворотні дзвінки"
 
-#: templates/contacts/email/new_feedback_notification.html:5
-msgid "New feedback message #"
-msgstr "Нове повідомлення про зворотній звʼязок #"
+#: contacts/templates/contacts/error_message/email.html:5
+msgid "New error message #"
+msgstr "Нове повідомлення про помилку #"
 
-#: templates/contacts/email/new_feedback_notification.html:22
-#: templates/contacts/email/new_return_call_notification.html:26
+#: contacts/templates/contacts/error_message/email.html:19
+#: contacts/templates/contacts/feedback/email.html:22
+#: contacts/templates/contacts/return_call/email.html:26
 msgid "Show on site"
 msgstr "Показати на сайті"
 
-#: templates/contacts/email/new_return_call_notification.html:5
-msgid "New return call request #"
-msgstr "Новий запит на зворотній дзвінок #"
+#: contacts/templates/contacts/error_message/modal.html:14
+msgid "Помилка на сайті"
+msgstr ""
 
-#: templates/contacts/index.html:17
+#: contacts/templates/contacts/error_message/modal.html:23
+msgid "Повідомити про помилку"
+msgstr ""
+
+#: contacts/templates/contacts/error_message/modal.html:27
+#: contacts/templates/contacts/return_call/modal.html:27
+msgid "Відмінити"
+msgstr ""
+
+#: contacts/templates/contacts/feedback/email.html:5
+msgid "New feedback message #"
+msgstr "Нове повідомлення про зворотній звʼязок #"
+
+#: contacts/templates/contacts/index.html:17
 msgid "Зворотній звʼязок"
 msgstr ""
 
-#: templates/contacts/index.html:78
+#: contacts/templates/contacts/index.html:78
 msgid "Надіслати повідомлення"
 msgstr ""
 
-#: templates/contacts/index.html:90
+#: contacts/templates/contacts/index.html:90
+#: contacts/templates/contacts/return_call/modal.html:14
 msgid "Зворотній дзвінок"
 msgstr ""
 
-#: templates/contacts/index.html:91
+#: contacts/templates/contacts/index.html:91
+#: contacts/templates/contacts/return_call/form.html:10
 msgid ""
 "Залиште нам свій номер телефону, і ми Вам зателефонуємо у зручний для Вас час"
 msgstr ""
 
-#: templates/contacts/index.html:141
+#: contacts/templates/contacts/index.html:141
+#: contacts/templates/contacts/return_call/modal.html:23
 msgid "Замовити дзвінок"
 msgstr ""
 
-#: views.py:46
+#: contacts/templates/contacts/return_call/email.html:5
+msgid "New return call request #"
+msgstr "Новий запит на зворотній дзвінок #"
+
+#: contacts/views.py:47
 msgid "Message was successfully sent"
 msgstr "Повідомлення було успішно надіслане"
 
-#: views.py:54
+#: contacts/views.py:55
 msgid "Please fix the errors in the feedback form"
 msgstr "Будь-ласка виправте помилки у формі зворотнього звʼязку"
 
-#: views.py:67
+#: contacts/views.py:68 contacts/views.py:111
 msgid "Call request was successfully sent"
 msgstr "Запит на зворотній дзвінок був успішно надісланий"
 
-#: views.py:75
+#: contacts/views.py:76
 msgid "Please fix the errors in the return call form"
 msgstr "Будь-ласка виправте помилки у формі зворотнього дзвінка"
+
+#: contacts/views.py:150
+msgid "Error message was successfully sent"
+msgstr "Повідомлення про помилку успішно відправлено"
