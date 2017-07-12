@@ -44,6 +44,10 @@ class ErrorMessage(AbstractMessage):
 
     url = models.URLField(_('URL'), max_length=255)
 
+    class Meta:
+        verbose_name = _('Error message')
+        verbose_name_plural = _('Error messages')
+
 
 class ReturnCall(models.Model):
 
