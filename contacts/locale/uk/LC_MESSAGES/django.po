@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-11 15:04+0000\n"
+"POT-Creation-Date: 2017-07-12 20:46+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,7 @@ msgstr "Нове повідомлення про помилку #"
 msgid "New return call request #%s"
 msgstr "Новий запит на зворотній дзвінок #%s"
 
-#: contacts/models.py:11 contacts/models.py:60
+#: contacts/models.py:11 contacts/models.py:64
 msgid "User"
 msgstr "Користувач"
 
@@ -45,7 +45,7 @@ msgstr "Користувач"
 msgid "Name"
 msgstr "Імʼя"
 
-#: contacts/models.py:17 contacts/models.py:72
+#: contacts/models.py:17 contacts/models.py:76
 #: contacts/templates/contacts/error_message/email.html:13
 #: contacts/templates/contacts/feedback/email.html:16
 #: contacts/templates/contacts/return_call/email.html:7
@@ -58,7 +58,7 @@ msgstr "Телефон"
 msgid "Email"
 msgstr ""
 
-#: contacts/models.py:23 contacts/models.py:75
+#: contacts/models.py:23 contacts/models.py:79
 msgid "Date created"
 msgstr "Дата створення"
 
@@ -84,35 +84,43 @@ msgstr "Повідомлення зворотнього звʼязку"
 msgid "URL"
 msgstr ""
 
-#: contacts/models.py:54
+#: contacts/models.py:48
+msgid "Error message"
+msgstr "Повідомлення про помилку #"
+
+#: contacts/models.py:49
+msgid "Error messages"
+msgstr "Повідомлення про помилку #"
+
+#: contacts/models.py:58
 msgid "As fast as possible"
 msgstr "Якнайшвидше"
 
-#: contacts/models.py:55
+#: contacts/models.py:59
 msgid "In fixed time"
 msgstr "В зазначений час"
 
-#: contacts/models.py:63 contacts/templates/contacts/return_call/email.html:10
+#: contacts/models.py:67 contacts/templates/contacts/return_call/email.html:10
 msgid "Answer time"
 msgstr "Час відповіді"
 
-#: contacts/models.py:67 contacts/templates/contacts/return_call/email.html:14
+#: contacts/models.py:71 contacts/templates/contacts/return_call/email.html:14
 msgid "Start time"
 msgstr "Від"
 
-#: contacts/models.py:70 contacts/templates/contacts/return_call/email.html:17
+#: contacts/models.py:74 contacts/templates/contacts/return_call/email.html:17
 msgid "End time"
 msgstr "До"
 
-#: contacts/models.py:77 contacts/templates/contacts/return_call/email.html:22
+#: contacts/models.py:81 contacts/templates/contacts/return_call/email.html:22
 msgid "Comment"
 msgstr "Коментар"
 
-#: contacts/models.py:108
+#: contacts/models.py:112
 msgid "Return call"
 msgstr "Зворотній дзвінок"
 
-#: contacts/models.py:109
+#: contacts/models.py:113
 msgid "Return calls"
 msgstr "Зворотні дзвінки"
 
@@ -120,11 +128,17 @@ msgstr "Зворотні дзвінки"
 msgid "New error message #"
 msgstr "Нове повідомлення про помилку #"
 
-#: contacts/templates/contacts/error_message/email.html:19
+#: contacts/templates/contacts/error_message/email.html:20
 #: contacts/templates/contacts/feedback/email.html:22
 #: contacts/templates/contacts/return_call/email.html:26
 msgid "Show on site"
 msgstr "Показати на сайті"
+
+#: contacts/templates/contacts/error_message/form.html:9
+msgid ""
+"Якщо ви знайшли помилку на нашому сайті, ми будемо дуже вдячні, якщо ви "
+"коротко опишете її нижче"
+msgstr ""
 
 #: contacts/templates/contacts/error_message/modal.html:14
 msgid "Помилка на сайті"
@@ -187,6 +201,6 @@ msgstr "Запит на зворотній дзвінок був успішно 
 msgid "Please fix the errors in the return call form"
 msgstr "Будь-ласка виправте помилки у формі зворотнього дзвінка"
 
-#: contacts/views.py:150
+#: contacts/views.py:152
 msgid "Error message was successfully sent"
 msgstr "Повідомлення про помилку успішно відправлено"
