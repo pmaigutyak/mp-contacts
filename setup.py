@@ -1,7 +1,6 @@
 
-from setuptools import setup, find_packages
-
 from contacts import __version__
+from setuptools import setup, find_packages
 
 
 with open('requirements.txt') as f:
