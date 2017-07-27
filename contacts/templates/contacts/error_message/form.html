@@ -5,6 +5,10 @@
 
     {% csrf_token %}
 
+    <div class="col-xs-12">
+        <p>{% trans 'Якщо ви знайшли помилку на нашому сайті, ми будемо дуже вдячні, якщо ви коротко опишете її нижче' %}</p>
+    </div>
+
     <div class="form-group m-b-10 {% if form.name.errors %}has-error{% endif %}">
         {{ form.name.label_tag }}
         {{ form.name|add_class:"form-control input-lg" }}

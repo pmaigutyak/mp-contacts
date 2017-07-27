@@ -32,6 +32,26 @@ RECAPTCHA_PUBLIC_KEY = '***************************************'
 RECAPTCHA_PRIVATE_KEY = '*****************************************'
 ```
 
+### JS Modal:
+
+Add 'contacts/contacts.js' to js files
+
+HTML:
+```
+<button class="btn btn-primary scroll" data-role="feedback-btn">
+    <i class="fa fa-envelope"></i>
+</button>
+```
+
+Javascript:
+```
+(function ($) {
+    $('[data-role=feedback-btn]').contactMessageModal({
+        url: '{% url 'contacts:feedback' %}'
+    }).tooltip();
+})(jQuery);
+```
+
 Run migrations:
 ```
 $ python manage.py migrate
