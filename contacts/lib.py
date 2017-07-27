@@ -14,7 +14,7 @@ def _send_sms(template, context):
 
 def send_new_feedback_notification(feedback):
 
-    subject = _('New feedback message #%s') % feedback.id
+    subject = _('New feedback message #') + str(feedback.id)
 
     email_template = 'contacts/feedback/email.html'
 
@@ -32,7 +32,7 @@ def send_new_feedback_notification(feedback):
 
 def send_new_error_message_notification(error_message):
 
-    subject = _('New error message #%s') % error_message.id
+    subject = _('New error message #') + str(error_message.id)
 
     email_template = 'contacts/error_message/email.html'
 
@@ -50,7 +50,7 @@ def send_new_error_message_notification(error_message):
 
 def send_new_return_call_notification(return_call):
 
-    subject = _('New return call request #%s') % return_call.id
+    subject = _('New return call request #') + str(return_call.id)
 
     email_template = 'contacts/return_call/email.html'
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-01 19:00+0200\n"
+"POT-Creation-Date: 2017-07-27 10:43+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,98 +21,122 @@ msgstr ""
 msgid "Contacts"
 msgstr ""
 
-#: lib.py:17
-#, python-format
-msgid "New feedback message #%s"
-msgstr ""
-
-#: lib.py:35
-#, python-format
-msgid "New return call request #%s"
-msgstr ""
-
-#: models.py:12 models.py:49
-msgid "User"
-msgstr ""
-
-#: models.py:14 templates/contacts/email/new_feedback_notification.html:10
-msgid "Name"
-msgstr ""
-
-#: models.py:16 templates/contacts/email/new_feedback_notification.html:7
-msgid "Subject"
-msgstr ""
-
-#: models.py:19 models.py:61
-#: templates/contacts/email/new_feedback_notification.html:16
-#: templates/contacts/email/new_return_call_notification.html:7
-msgid "Mobile"
-msgstr ""
-
-#: models.py:22 templates/contacts/email/new_feedback_notification.html:13
-msgid "Email"
-msgstr ""
-
-#: models.py:25 models.py:64
-msgid "Date created"
-msgstr ""
-
-#: models.py:27 templates/contacts/email/new_feedback_notification.html:19
-msgid "Message text"
-msgstr ""
-
-#: models.py:33
-msgid "Feedback message"
-msgstr ""
-
-#: models.py:34
-msgid "Feedback messages"
-msgstr ""
-
-#: models.py:43
-msgid "As fast as possible"
-msgstr ""
-
-#: models.py:44
-msgid "In fixed time"
-msgstr ""
-
-#: models.py:52 templates/contacts/email/new_return_call_notification.html:10
-msgid "Answer time"
-msgstr ""
-
-#: models.py:56 templates/contacts/email/new_return_call_notification.html:14
-msgid "Start time"
-msgstr ""
-
-#: models.py:59 templates/contacts/email/new_return_call_notification.html:17
-msgid "End time"
-msgstr ""
-
-#: models.py:66 templates/contacts/email/new_return_call_notification.html:22
-msgid "Comment"
-msgstr ""
-
-#: models.py:97
-msgid "Return call"
-msgstr ""
-
-#: models.py:98
-msgid "Return calls"
-msgstr ""
-
-#: templates/contacts/email/new_feedback_notification.html:5
+#: lib.py:17 templates/contacts/feedback/email.html:5
 msgid "New feedback message #"
 msgstr ""
 
-#: templates/contacts/email/new_feedback_notification.html:22
-#: templates/contacts/email/new_return_call_notification.html:26
+#: lib.py:35 templates/contacts/error_message/email.html:5
+msgid "New error message #"
+msgstr ""
+
+#: lib.py:53 templates/contacts/return_call/email.html:5
+msgid "New return call request #"
+msgstr ""
+
+#: models.py:11 models.py:60
+msgid "User"
+msgstr ""
+
+#: models.py:14 templates/contacts/error_message/email.html:7
+#: templates/contacts/feedback/email.html:10
+msgid "Name"
+msgstr ""
+
+#: models.py:17 models.py:72 templates/contacts/error_message/email.html:13
+#: templates/contacts/feedback/email.html:16
+#: templates/contacts/return_call/email.html:7
+msgid "Mobile"
+msgstr ""
+
+#: models.py:20 templates/contacts/error_message/email.html:10
+#: templates/contacts/feedback/email.html:13
+msgid "Email"
+msgstr ""
+
+#: models.py:23 models.py:75
+msgid "Date created"
+msgstr ""
+
+#: models.py:25 templates/contacts/error_message/email.html:16
+#: templates/contacts/feedback/email.html:19
+msgid "Message text"
+msgstr ""
+
+#: models.py:36 templates/contacts/feedback/email.html:7
+msgid "Subject"
+msgstr ""
+
+#: models.py:39
+msgid "Feedback message"
+msgstr ""
+
+#: models.py:40
+msgid "Feedback messages"
+msgstr ""
+
+#: models.py:45
+msgid "URL"
+msgstr ""
+
+#: models.py:54
+msgid "As fast as possible"
+msgstr ""
+
+#: models.py:55
+msgid "In fixed time"
+msgstr ""
+
+#: models.py:63 templates/contacts/return_call/email.html:10
+msgid "Answer time"
+msgstr ""
+
+#: models.py:67 templates/contacts/return_call/email.html:14
+msgid "Start time"
+msgstr ""
+
+#: models.py:70 templates/contacts/return_call/email.html:17
+msgid "End time"
+msgstr ""
+
+#: models.py:77 templates/contacts/return_call/email.html:22
+msgid "Comment"
+msgstr ""
+
+#: models.py:108
+msgid "Return call"
+msgstr ""
+
+#: models.py:109
+msgid "Return calls"
+msgstr ""
+
+#: templates/contacts/error_message/email.html:20
+#: templates/contacts/feedback/email.html:22
+#: templates/contacts/return_call/email.html:26
 msgid "Show on site"
 msgstr ""
 
-#: templates/contacts/email/new_return_call_notification.html:5
-msgid "New return call request #"
-msgstr ""
+#: templates/contacts/error_message/modal.html:13
+msgid "Помилка на сайті"
+msgstr "Error on site"
+
+#: templates/contacts/error_message/modal.html:22
+msgid "Повідомити про помилку"
+msgstr "Send error"
+
+#: templates/contacts/error_message/modal.html:26
+#: templates/contacts/feedback/modal.html:26
+#: templates/contacts/return_call/modal.html:26
+msgid "Відмінити"
+msgstr "Cancel"
+
+#: templates/contacts/feedback/modal.html:13
+msgid "Нове повідомлення"
+msgstr "New message"
+
+#: templates/contacts/feedback/modal.html:22
+msgid "Надіслати"
+msgstr "Send"
 
 #: templates/contacts/index.html:17
 msgid "Зворотній звʼязок"
@@ -123,10 +147,11 @@ msgid "Надіслати повідомлення"
 msgstr "Send message"
 
 #: templates/contacts/index.html:90
+#: templates/contacts/return_call/modal.html:13
 msgid "Зворотній дзвінок"
 msgstr "Return call"
 
-#: templates/contacts/index.html:91
+#: templates/contacts/index.html:91 templates/contacts/return_call/form.html:10
 msgid ""
 "Залиште нам свій номер телефону, і ми Вам зателефонуємо у зручний для Вас час"
 msgstr ""
@@ -134,21 +159,26 @@ msgstr ""
 "for you"
 
 #: templates/contacts/index.html:141
+#: templates/contacts/return_call/modal.html:22
 msgid "Замовити дзвінок"
 msgstr "Get a call"
 
-#: views.py:46
+#: views.py:47 views.py:191
 msgid "Message was successfully sent"
 msgstr ""
 
-#: views.py:54
+#: views.py:55
 msgid "Please fix the errors in the feedback form"
 msgstr ""
 
-#: views.py:67
+#: views.py:68 views.py:111
 msgid "Call request was successfully sent"
 msgstr ""
 
-#: views.py:75
+#: views.py:76
 msgid "Please fix the errors in the return call form"
+msgstr ""
+
+#: views.py:152
+msgid "Error message was successfully sent"
 msgstr ""

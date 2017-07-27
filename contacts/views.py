@@ -157,3 +157,43 @@ def create_error_message(request):
                 {'form': form}, status=403)
 
     return render(request, 'contacts/error_message/modal.html', {'form': form})
+
+
+def create_feedback(request):
+
+    user = request.user
+
+    form_params = {'data': request.POST or None}
+
+    if user.is_authenticated():
+        mobile = user.profile.mobile if hasattr(user, 'profile') else ''
+        form_params['initial'] = {
+            'name': user.get_full_name(),
+            'email': user.email,
+            'mobile': mobile
+        }
+
+    form = FeedbackForm(**form_params)
+
+    if request.method == 'POST':
+
+        if form.is_valid():
+
+            feedback = form.save(commit=False)
+
+            if user.is_authenticated():
+                feedback.user = user
+
+                feedback.save()
+
+            send_new_feedback_notification(feedback)
+
+            return HttpResponse(_('Message was successfully sent'))
+
+        else:
+            print form.errors
+            return render(
+                request, 'contacts/feedback/form.html',
+                {'form': form}, status=403)
+
+    return render(request, 'contacts/feedback/modal.html', {'form': form})

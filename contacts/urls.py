@@ -12,4 +12,6 @@ urlpatterns = [
 
     url(r'^error-message/$', views.create_error_message, name='error-message'),
 
+    url(r'^feedback/$', views.create_feedback, name='feedback'),
+
 ]

@@ -10,16 +10,16 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
                 <h4 class="modal-title">
-                    {% trans 'Зворотній дзвінок' %}
+                    {% trans 'Нове повідомлення' %}
                 </h4>
             </div>
             <div class="modal-body">
-                {% include 'contacts/return_call/form.html' %}
+                {% include 'contacts/feedback/form.html' %}
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-success pull-left" data-role="submit-form-btn">
-                    <i class="fa fa-phone"></i>
-                    {% trans 'Замовити дзвінок' %}
+                    <i class="fa fa-envelope"></i>
+                    {% trans 'Надіслати' %}
                 </button>
 
                 <button type="button" class="btn btn-default" data-dismiss="modal">
