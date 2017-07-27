@@ -32,20 +32,24 @@ RECAPTCHA_PUBLIC_KEY = '***************************************'
 RECAPTCHA_PRIVATE_KEY = '*****************************************'
 ```
 
-JS Modal:
+### JS Modal:
+
 Add 'contacts/contacts.js' to js files
-Initialize modal:
+
+HTML:
 ```
-{% block js %}
-    {{ block.super }}
-    <script>
-        (function ($) {
-            $('[data-role=feedback-btn]').contactMessageModal({
-                url: '{% url 'contacts:feedback' %}'
-            }).tooltip();
-        })(jQuery);
-    </script>
-{% endblock %}
+<button class="btn btn-primary scroll" data-role="feedback-btn">
+    <i class="fa fa-envelope"></i>
+</button>
+```
+
+Javascript:
+```
+(function ($) {
+    $('[data-role=feedback-btn]').contactMessageModal({
+        url: '{% url 'contacts:feedback' %}'
+    }).tooltip();
+})(jQuery);
 ```
 
 Run migrations:
