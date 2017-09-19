@@ -184,14 +184,13 @@ def create_feedback(request):
             if user.is_authenticated():
                 feedback.user = user
 
-                feedback.save()
+            feedback.save()
 
             send_new_feedback_notification(feedback)
 
             return HttpResponse(_('Message was successfully sent'))
 
         else:
-            print form.errors
             return render(
                 request, 'contacts/feedback/form.html',
                 {'form': form}, status=403)
