@@ -10,4 +10,4 @@ class ContactsAppConfig(AppConfig):
 
 default_app_config = 'contacts.ContactsAppConfig'
 
-__version__ = '3.2'
+__version__ = '3.3'
