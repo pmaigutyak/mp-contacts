@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-27 10:43+0300\n"
+"POT-Creation-Date: 2018-02-25 19:24+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,7 +35,7 @@ msgstr "Нове повідомлення про помилку #"
 msgid "New return call request #"
 msgstr "Новий запит на зворотній дзвінок #"
 
-#: models.py:11 models.py:60
+#: models.py:11 models.py:64
 msgid "User"
 msgstr "Користувач"
 
@@ -44,7 +44,7 @@ msgstr "Користувач"
 msgid "Name"
 msgstr "Імʼя"
 
-#: models.py:17 models.py:72 templates/contacts/error_message/email.html:13
+#: models.py:17 models.py:76 templates/contacts/error_message/email.html:13
 #: templates/contacts/feedback/email.html:16
 #: templates/contacts/return_call/email.html:7
 msgid "Mobile"
@@ -55,7 +55,7 @@ msgstr "Телефон"
 msgid "Email"
 msgstr ""
 
-#: models.py:23 models.py:75
+#: models.py:23 models.py:79
 msgid "Date created"
 msgstr "Дата створення"
 
@@ -80,35 +80,43 @@ msgstr "Повідомлення зворотнього звʼязку"
 msgid "URL"
 msgstr ""
 
-#: models.py:54
+#: models.py:48
+msgid "Error message"
+msgstr "Повідомлення про помилку"
+
+#: models.py:49
+msgid "Error messages"
+msgstr "Повідомлення про помилку"
+
+#: models.py:58
 msgid "As fast as possible"
 msgstr "Якнайшвидше"
 
-#: models.py:55
+#: models.py:59
 msgid "In fixed time"
 msgstr "В зазначений час"
 
-#: models.py:63 templates/contacts/return_call/email.html:10
+#: models.py:67 templates/contacts/return_call/email.html:10
 msgid "Answer time"
 msgstr "Час відповіді"
 
-#: models.py:67 templates/contacts/return_call/email.html:14
+#: models.py:71 templates/contacts/return_call/email.html:14
 msgid "Start time"
 msgstr "Від"
 
-#: models.py:70 templates/contacts/return_call/email.html:17
+#: models.py:74 templates/contacts/return_call/email.html:17
 msgid "End time"
 msgstr "До"
 
-#: models.py:77 templates/contacts/return_call/email.html:22
+#: models.py:81 templates/contacts/return_call/email.html:22
 msgid "Comment"
 msgstr "Коментар"
 
-#: models.py:108
+#: models.py:112
 msgid "Return call"
 msgstr "Зворотній дзвінок"
 
-#: models.py:109
+#: models.py:113
 msgid "Return calls"
 msgstr "Зворотні дзвінки"
 
@@ -117,6 +125,12 @@ msgstr "Зворотні дзвінки"
 #: templates/contacts/return_call/email.html:26
 msgid "Show on site"
 msgstr "Показати на сайті"
+
+#: templates/contacts/error_message/form.html:9
+msgid ""
+"Якщо ви знайшли помилку на нашому сайті, ми будемо дуже вдячні, якщо ви "
+"коротко опишете її нижче"
+msgstr ""
 
 #: templates/contacts/error_message/modal.html:13
 msgid "Помилка на сайті"
