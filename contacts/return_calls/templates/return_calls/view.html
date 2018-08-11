@@ -1,0 +1,64 @@
+
+{% load i18n widget_tweaks %}
+
+<form method="post">
+
+    {% csrf_token %}
+
+    <div class="row">
+        <div class="form-group col-md-6 col-sm-12 col-xs-12 {% if form.comment.errors %}has-error{% endif %}">
+            {{ form.comment.label_tag }}
+            {{ form.comment|add_class:'form-control'|attr:"rows:10" }}
+            {% if form.comment.errors %}
+                <span class="help-block">{{ form.comment.errors }}</span>
+            {% endif %}
+        </div>
+
+        <div class="form-group col-md-6 col-sm-12 col-xs-12 xs-margin {% if form.mobile.errors %}has-error{% endif %}">
+            {{ form.mobile.label_tag }}
+            {{ form.mobile|add_class:"form-control input-lg" }}
+            {% if form.mobile.errors %}
+                <span class="help-block">{{ form.mobile.errors }}</span>
+            {% endif %}
+        </div>
+
+        <div class="form-group col-md-6 col-sm-12 col-xs-12 xs-margin {% if form.answer_time.errors %}has-error{% endif %}">
+            {{ form.answer_time.label_tag }}
+            {{ form.answer_time }}
+            {% if form.answer_time.errors %}
+                <span class="help-block">{{ form.answer_time.errors }}</span>
+            {% endif %}
+        </div>
+
+        <div data-role="time-fields">
+            <div class="form-group col-md-3 col-sm-12 col-xs-12 xs-margin time-field {% if form.answer_start_time.errors %}has-error{% endif %}">
+                {{ form.answer_start_time.label_tag }}
+                {{ form.answer_start_time|add_class:"form-control input-lg" }}
+                {% if form.answer_start_time.errors %}
+                    <span class="help-block">{{ form.answer_start_time.errors }}</span>
+                {% endif %}
+            </div>
+
+            <div class="form-group col-md-3 col-sm-12 col-xs-12 time-field {% if form.answer_end_time.errors %}has-error{% endif %}">
+                {{ form.answer_end_time.label_tag }}
+                {{ form.answer_end_time|add_class:"form-control input-lg" }}
+                {% if form.answer_end_time.errors %}
+                    <span class="help-block">{{ form.answer_end_time.errors }}</span>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        {{ form.captcha }}
+        {% if form.captcha.errors %}
+            <p class="text-danger">{{ form.captcha.errors.as_text }}</p>
+        {% endif %}
+    </div>
+
+    <button class="btn btn-lg btn-success" name="call" value="1" type="submit">
+        <i class="fa fa-phone"></i>
+        {% trans 'Замовити дзвінок' %}
+    </button>
+
+</form>

@@ -1,0 +1,28 @@
+
+{% load i18n %}
+
+
+<h1>{% trans 'New return call request #' %} {{ object.id }}</h1> <br />
+
+<strong>{% trans 'Mobile' %}:</strong> <br />
+{{ object.mobile }} <br /><br />
+
+<strong>{% trans 'Answer time' %}:</strong> <br />
+{{ object.get_answer_time_display }} <br /><br />
+
+{% if object.is_time_fixed %}
+    <strong>{% trans 'Start time' %}:</strong> <br />
+    {{ object.answer_start_time }} <br /><br />
+
+    <strong>{% trans 'End time' %}:</strong> <br />
+    {{ object.answer_end_time }} <br /><br />
+{% endif %}
+
+{% if object.comment %}
+    <strong>{% trans 'Comment' %}:</strong> <br />
+    {{ object.comment }} <br /><br />
+{% endif %}
+
+<a href="http://{{ site.domain }}{% url 'admin:return_calls_returncall_change' object.id %}">
+    {% trans 'Show on site' %}
+</a>

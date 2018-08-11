@@ -1,0 +1,154 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-23 09:12+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: contacts/return_calls/__init__.py:9
+#, fuzzy
+#| msgid "Return call"
+msgid "ReturnCall"
+msgstr "Зворотній дзвінок"
+
+#: contacts/return_calls/models.py:14
+msgid "As fast as possible"
+msgstr "Якнайшвидше"
+
+#: contacts/return_calls/models.py:15
+msgid "In fixed time"
+msgstr "В зазначений час"
+
+#: contacts/return_calls/models.py:20
+msgid "User"
+msgstr "Користувач"
+
+#: contacts/return_calls/models.py:24
+#: contacts/return_calls/templates/return_calls/email/message.html:10
+msgid "Answer time"
+msgstr "Час відповіді"
+
+#: contacts/return_calls/models.py:28
+#: contacts/return_calls/templates/return_calls/email/message.html:14
+msgid "Start time"
+msgstr "Від"
+
+#: contacts/return_calls/models.py:31
+#: contacts/return_calls/templates/return_calls/email/message.html:17
+msgid "End time"
+msgstr "До"
+
+#: contacts/return_calls/models.py:33
+#: contacts/return_calls/templates/return_calls/email/message.html:7
+msgid "Mobile"
+msgstr "Телефон"
+
+#: contacts/return_calls/models.py:36
+msgid "Date created"
+msgstr "Дата створення"
+
+#: contacts/return_calls/models.py:38
+#: contacts/return_calls/templates/return_calls/email/message.html:22
+msgid "Comment"
+msgstr "Коментар"
+
+#: contacts/return_calls/models.py:69
+msgid "Return call"
+msgstr "Зворотній дзвінок"
+
+#: contacts/return_calls/models.py:70
+msgid "Return calls"
+msgstr "Зворотні дзвінки"
+
+#: contacts/return_calls/templates/return_calls/email/message.html:5
+msgid "New return call request #"
+msgstr "Новий запит на зворотній дзвінок #"
+
+#: contacts/return_calls/templates/return_calls/email/message.html:27
+msgid "Show on site"
+msgstr "Показати на сайті"
+
+#: contacts/return_calls/templates/return_calls/email/subject.txt:4
+msgid "Новий запит на зворотній дзвінок"
+msgstr ""
+
+#: contacts/return_calls/templates/return_calls/form.html:10
+msgid ""
+"Залиште нам свій номер телефону, і ми Вам зателефонуємо у зручний для Вас час"
+msgstr ""
+
+#: contacts/return_calls/templates/return_calls/modal.html:13
+msgid "Зворотній дзвінок"
+msgstr ""
+
+#: contacts/return_calls/templates/return_calls/modal.html:22
+#: contacts/return_calls/templates/return_calls/view.html:61
+msgid "Замовити дзвінок"
+msgstr ""
+
+#: contacts/return_calls/templates/return_calls/modal.html:26
+msgid "Відмінити"
+msgstr ""
+
+#: contacts/return_calls/templates/return_calls/success_message.html:5
+msgid "Запит на зворотній дзвінок було успішно надіслано"
+msgstr ""
+
+#~ msgid "Contacts"
+#~ msgstr "Контакти"
+
+#~ msgid "New feedback message #"
+#~ msgstr "Нове повідомлення про зворотній звʼязок #"
+
+#~ msgid "New error message #"
+#~ msgstr "Нове повідомлення про помилку #"
+
+#~ msgid "Name"
+#~ msgstr "Імʼя"
+
+#~ msgid "Message text"
+#~ msgstr "Текст повідомлення"
+
+#~ msgid "Subject"
+#~ msgstr "Тема"
+
+#~ msgid "Feedback message"
+#~ msgstr "Повідомлення зворотнього звʼязку"
+
+#~ msgid "Feedback messages"
+#~ msgstr "Повідомлення зворотнього звʼязку"
+
+#~ msgid "Error message"
+#~ msgstr "Повідомлення про помилку"
+
+#~ msgid "Error messages"
+#~ msgstr "Повідомлення про помилку"
+
+#~ msgid "Message was successfully sent"
+#~ msgstr "Повідомлення було успішно надіслане"
+
+#~ msgid "Please fix the errors in the feedback form"
+#~ msgstr "Будь-ласка виправте помилки у формі зворотнього звʼязку"
+
+#~ msgid "Call request was successfully sent"
+#~ msgstr "Запит на зворотній дзвінок був успішно надісланий"
+
+#~ msgid "Please fix the errors in the return call form"
+#~ msgstr "Будь-ласка виправте помилки у формі зворотнього дзвінка"
+
+#~ msgid "Error message was successfully sent"
+#~ msgstr "Повідомлення про помилку успішно відправлено"

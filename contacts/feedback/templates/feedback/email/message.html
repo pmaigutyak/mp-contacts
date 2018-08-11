@@ -1,0 +1,22 @@
+
+{% load i18n %}
+
+
+<h1>{% trans 'New feedback message #' %} {{ object.id }}</h1> <br />
+
+<strong>{% trans 'Subject' %}:</strong> <br />
+{{ object.subject }} <br /><br />
+
+<strong>{% trans 'Name' %}:</strong> <br />
+{{ object.name }} <br /><br />
+
+<strong>{% trans 'Email' %}:</strong> <br />
+{{ object.email }} <br /><br />
+
+<strong>{% trans 'Mobile' %}:</strong> <br />
+{{ object.mobile }} <br /><br />
+
+<strong>{% trans 'Message text' %}:</strong> <br />
+{{ object.text }} <br /><br />
+
+<a href="http://{{ site.domain }}{% url 'admin:feedback_feedback_change' object.id %}">{% trans 'Show on site' %}</a>

@@ -1,7 +1,10 @@
 include README.md
 include LICENSE
 include requirements.txt
-recursive-include contacts/locale *
-recursive-include contacts/static *
-recursive-include contacts/templates *
+recursive-include contacts/feedback/locale *
+recursive-include contacts/feedback/static *
+recursive-include contacts/feedback/templates *
+recursive-include contacts/return_calls/locale *
+recursive-include contacts/return_calls/static *
+recursive-include contacts/return_calls/templates *
 prune *.pyc

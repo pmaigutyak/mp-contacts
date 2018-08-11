@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-23 09:12+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: contacts/feedback/__init__.py:9
+msgid "Feedback"
+msgstr ""
+
+#: contacts/feedback/models.py:10
+#: contacts/feedback/templates/feedback/email/message.html:7
+msgid "Subject"
+msgstr ""
+
+#: contacts/feedback/models.py:13
+msgid "Feedback message"
+msgstr ""
+
+#: contacts/feedback/models.py:14
+msgid "Feedback messages"
+msgstr ""
+
+#: contacts/feedback/templates/feedback/email/message.html:5
+msgid "New feedback message #"
+msgstr ""
+
+#: contacts/feedback/templates/feedback/email/message.html:10
+msgid "Name"
+msgstr ""
+
+#: contacts/feedback/templates/feedback/email/message.html:13
+msgid "Email"
+msgstr ""
+
+#: contacts/feedback/templates/feedback/email/message.html:16
+msgid "Mobile"
+msgstr ""
+
+#: contacts/feedback/templates/feedback/email/message.html:19
+msgid "Message text"
+msgstr ""
+
+#: contacts/feedback/templates/feedback/email/message.html:22
+msgid "Show on site"
+msgstr ""
+
+#: contacts/feedback/templates/feedback/email/subject.txt:4
+#, fuzzy
+#| msgid "Нове повідомлення"
+msgid "Нове повідомлення зворотнього звʼязку"
+msgstr "New message"
+
+#: contacts/feedback/templates/feedback/modal.html:13
+msgid "Нове повідомлення"
+msgstr "New message"
+
+#: contacts/feedback/templates/feedback/modal.html:22
+msgid "Надіслати"
+msgstr "Send"
+
+#: contacts/feedback/templates/feedback/modal.html:26
+msgid "Відмінити"
+msgstr "Cancel"
+
+#: contacts/feedback/templates/feedback/success_message.html:5
+msgid "Повідомлення було успішно надіслане"
+msgstr ""
+
+#: contacts/feedback/templates/feedback/view.html:61
+msgid "Надіслати повідомлення"
+msgstr "Send message"
+
+#~ msgid ""
+#~ "Якщо ви знайшли помилку на нашому сайті, ми будемо дуже вдячні, якщо ви "
+#~ "коротко опишете її нижче"
+#~ msgstr ""
+#~ "If you've found an error on our site, we'll be very grateful if you "
+#~ "describe it bellow"
+
+#~ msgid "Помилка на сайті"
+#~ msgstr "Error on site"
+
+#~ msgid "Повідомити про помилку"
+#~ msgstr "Send error"
+
+#~ msgid "Зворотній звʼязок"
+#~ msgstr "Feedback"
+
+#~ msgid "Зворотній дзвінок"
+#~ msgstr "Return call"
+
+#~ msgid ""
+#~ "Залиште нам свій номер телефону, і ми Вам зателефонуємо у зручний для Вас "
+#~ "час"
+#~ msgstr ""
+#~ "Leave us your phone number and we will call you back at a convenient time "
+#~ "for you"
+
+#~ msgid "Замовити дзвінок"
+#~ msgstr "Get a call"
